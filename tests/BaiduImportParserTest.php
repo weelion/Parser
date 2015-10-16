@@ -29,12 +29,12 @@ class BaiduImportParserTest extends \PHPUnit_Framework_TestCase {
      */
     public function testConstruct()
     {
-        $this->assertInstanceOf('\Ltbl\Libraries\Parser\BaiduImportParser', $this->parser);
+        $this->assertInstanceOf('Ltbl\Parser\BaiduImportParser', $this->parser);
     }
 
     /**
      * 测试解析内容为空
-     * @expectedException        \Ltbl\Libraries\Parser\ParserException
+     * @expectedException        Ltbl\Parser\ParserException
      * @expectedExceptionMessage 解析内容不能为空
      */
     public function testEmptyContent()
@@ -44,7 +44,7 @@ class BaiduImportParserTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * 测试解析内容不是 JSON 格式
-     * @expectedException        \Ltbl\Libraries\Parser\ParserException
+     * @expectedException        Ltbl\Parser\ParserException
      * @expectedExceptionMessage 解析内容必须是 JSON 格式
      */
     public function testNotJsonContent()
@@ -54,7 +54,7 @@ class BaiduImportParserTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * 测试解析内容不合法 JSON 格式
-     * @expectedException        \Ltbl\Libraries\Parser\ParserException
+     * @expectedException        Ltbl\Parser\ParserException
      * @expectedExceptionMessage 解析内容不是预定内容
      */
     public function testNotValidContent()
@@ -65,7 +65,7 @@ class BaiduImportParserTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * 测试转换函数不存在异常
-     * @expectedException        \Ltbl\Libraries\Parser\ParserException
+     * @expectedException        Ltbl\Parser\ParserException
      * @expectedExceptionMessage 解析器转换函数不存在：notExistsConvertFunction
      */
     public function testNotExistsConvertFunction()

@@ -7,7 +7,7 @@ class ParserTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * 测试不存在解析器
-     * @expectedException        \Ltbl\Libraries\Parser\ParserException
+     * @expectedException        \Ltbl\Parser\ParserException
      * @expectedExceptionMessage 解析器不存在
      */
     public function testNotExistsParser()
@@ -22,6 +22,6 @@ class ParserTest extends \PHPUnit_Framework_TestCase {
     {
         $parser = Parser::instance('BaiduImport');
 
-        $this->assertInstanceOf('\Ltbl\Libraries\Parser\BaiduImportParser', $parser);
+        $this->assertInstanceOf('\Ltbl\Parser\BaiduImportParser', $parser);
     }
 }
