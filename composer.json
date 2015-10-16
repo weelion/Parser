@@ -1,0 +1,30 @@
+{
+    "name": "weelion/parser",
+    "type": "library",
+    "description": "parser library",
+    "keywords": ["parser"],
+    "license": "Apache Licence 2.0",
+    "authors": [
+        {
+            "name": "weelion",
+            "email": "weelion@qq.com",
+            "homepage": "https://github.com/weelion"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ltbl\\Parser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ltbl\\Parser\\": "tests/"
+        }
+    }
+}
