@@ -52,10 +52,10 @@ So easy, you just have to require the generated autoload file and you are alread
 
 require __DIR__.'/vendor/autoload.php';
 
-use weelion\parser;
+use Ltbl\Parser;
 
 // ...
 ```
 
-The weelion parser library follows the [PSR-4 Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4.md).
+The weelion parser library follows the [PSR-4 Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md).
 If you prefer install it manually, it can be autoload by any convenient autoloader.
