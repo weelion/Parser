@@ -20,13 +20,18 @@ class BaiduImportParser extends ImportParser {
     ];
 
     public $convertRules = [
-        'apk_id'           => 'originId',
+        'appid'            => 'originId',
         'title'            => 'name',
-        'package_name'     => 'package',
-        'smallmaplink'     => 'icon',
+        'category'         => 'catId',
+        'package_name'     => 'packageName',
+        'smallmaplink'     => 'iconUrl',
         'bigmaplink'       => 'screenshoots|stringToArray:;',  // 这里支持调用 convertUtils 类里面的转换函数， 暂时只支持调用一个函数转换
         'description'      => 'description',
-        'packagelink'      => 'link',
+        'packagelink'      => 'downloadlink',
+        'minsdkversion'    => 'minVersion',
+        'packagemd5'       => 'packageMd5',
+        'version'          => 'versionName',
+        'versioncode'      => 'versionCode',
         'status'           => 'operation',
         'server_test_type' => 'testType',
     ];
