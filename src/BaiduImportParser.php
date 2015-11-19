@@ -29,7 +29,7 @@ class BaiduImportParser extends ImportParser {
         'description'      => 'description',
         'changelog'        => 'changelog',
         'packagelink'      => 'downloadlink',
-        'minsdkversion'    => 'minVersion',
+        'minsdkversion'    => 'minSdkVersion',
         'packagemd5'       => 'packageMd5',
         'version'          => 'versionName',
         'versioncode'      => 'versionCode',
