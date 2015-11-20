@@ -22,7 +22,7 @@ class BaiduImportParser extends ImportParser {
     public $convertRules = [
         'appid'            => 'originId',
         'title'            => 'name',
-        'category'         => 'catId',
+        'category'         => 'categoryId',
         'package_name'     => 'packageName',
         'smallmaplink'     => 'iconUrl',
         'bigmaplink'       => 'screenshoots|stringToArray:;',  // 这里支持调用 convertUtils 类里面的转换函数， 暂时只支持调用一个函数转换
