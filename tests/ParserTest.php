@@ -20,8 +20,8 @@ class ParserTest extends \PHPUnit_Framework_TestCase {
      */
     public function testRightParser()
     {
-        $parser = Parser::instance('BaiduImport');
+        $parser = Parser::instance('BaiduGameImport');
 
-        $this->assertInstanceOf('\Ltbl\Parser\BaiduImportParser', $parser);
+        $this->assertInstanceOf('\Ltbl\Parser\BaiduGameImportParser', $parser);
     }
 }

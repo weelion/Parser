@@ -1,13 +1,13 @@
 <?php
 
-use Ltbl\Parser\BaiduImportParser;
+use Ltbl\Parser\BaiduGameImportParser;
 
 
-class BaiduImportParserTest extends \PHPUnit_Framework_TestCase {
+class BaiduGameImportParserTest extends \PHPUnit_Framework_TestCase {
 
     public function setUp()
     {
-        $this->parser = new BaiduImportParser();
+        $this->parser = new BaiduGameImportParser();
         $this->parser->originKeys = [
             'aa', 'bb', 'cc'
         ];
@@ -29,7 +29,7 @@ class BaiduImportParserTest extends \PHPUnit_Framework_TestCase {
      */
     public function testConstruct()
     {
-        $this->assertInstanceOf('Ltbl\Parser\BaiduImportParser', $this->parser);
+        $this->assertInstanceOf('Ltbl\Parser\BaiduGameImportParser', $this->parser);
     }
 
     /**

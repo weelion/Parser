@@ -6,7 +6,7 @@ namespace Ltbl\Parser;
  * 百度API解析器
  */
 
-class BaiduImportParser extends ImportParser {
+class BaiduGameImportParser extends ImportParser {
 
     public $originKeys = [
         "apk_id", "product_id", "channel", "title", "package_name", "versioncode", 
